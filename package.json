@@ -1,0 +1,19 @@
+{
+  "name": "adidas-checkout",
+  "version": "1.0.0",
+  "description": "Adidas front end coding challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camilosegura/adidas-checkout.git"
+  },
+  "author": "Camilo Segura <camilosegurar@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/camilosegura/adidas-checkout/issues"
+  },
+  "homepage": "https://github.com/camilosegura/adidas-checkout#readme"
+}
