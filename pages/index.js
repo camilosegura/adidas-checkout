@@ -1,5 +1,10 @@
+import Layout from 'components/Layout';
+
 export default function Index() {
   return (
-    <div>Main Page</div>
+    <div>
+      <Layout />
+      Main Page
+    </div>
   );
 }
