@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 export default function Layout({ children }) {
   return (
-    <div>{ children }</div>
+    <div className="container">{ children }</div>
   );
 }
 

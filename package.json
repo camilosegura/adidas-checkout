@@ -20,8 +20,11 @@
   },
   "homepage": "https://github.com/camilosegura/adidas-checkout#readme",
   "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
     "bootstrap": "^4.4.1",
     "next": "^9.2.1",
+    "node-sass": "^4.13.1",
     "path": "^0.12.7",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
