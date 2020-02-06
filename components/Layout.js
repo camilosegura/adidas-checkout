@@ -1,5 +1,11 @@
-export default function Layout() {
+import PropTypes from 'prop-types';
+
+export default function Layout({ children }) {
   return (
-    <div>Test</div>
+    <div>{ children }</div>
   );
 }
+
+Layout.propTypes = {
+  children: PropTypes.element.isRequired,
+};
