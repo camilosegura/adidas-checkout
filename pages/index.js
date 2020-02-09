@@ -1,7 +1,7 @@
+import Cart from 'components/Cart';
+
 export default function Index() {
   return (
-    <div>
-      Main Page
-    </div>
+    <Cart />
   );
 }
