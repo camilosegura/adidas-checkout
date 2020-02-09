@@ -1,6 +1,6 @@
-import LogoRebook from '../../assets/reebok-white.svg';
-import LogoProfile from '../../assets/profile.svg';
-import LogoAdidas from '../../assets/adidas-white.svg';
+import LogoRebook from '../../public/reebok-white.svg';
+import LogoProfile from '../../public/profile.svg';
+import LogoAdidas from '../../public/adidas-white.svg';
 import {
   HeaderBottom,
   HeaderTop,

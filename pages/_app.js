@@ -6,11 +6,15 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
-    font-family: 'Pangram';
-    src: url('/assets/fonts/AdihausDIN-Bold.woff2');
-    src: url('/assets/fonts/AdihausDIN-Regular.woff2');
-    src: url('/assets/fonts/adineuePRO-Bold.woff2');
-    src: url('/assets/fonts/adineuePRO-Regular.woff2');
+    font-family: 'AdihausDIN';
+    src: url('/fonts/AdihausDIN-Bold.woff2');
+    src: url('/fonts/AdihausDIN-Regular.woff2');
+  }
+
+  @font-face {
+    font-family: 'adineuePRO';
+    src: url('/fonts/adineuePRO-Bold.woff2');
+    src: url('/fonts/adineuePRO-Regular.woff2');
   }
 
   *, *::before, *::after {

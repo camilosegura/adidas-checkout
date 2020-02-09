@@ -24,6 +24,7 @@
     "@zeit/next-sass": "^1.0.1",
     "bootstrap": "^4.4.1",
     "next": "^9.2.1",
+    "next-fonts": "^1.0.3",
     "node-sass": "^4.13.1",
     "path": "^0.12.7",
     "prop-types": "^15.7.2",
