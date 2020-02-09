@@ -1,17 +1,23 @@
 import LogoRebook from '../../public/reebok-white.svg';
 import LogoProfile from '../../public/profile.svg';
 import LogoAdidas from '../../public/adidas-white.svg';
+import LogoSearch from '../../public/search.svg';
+import LogoBag from '../../public/bag.svg';
 import {
+  FormSearch,
   HeaderBottom,
   HeaderTop,
   HeaderBottomContainer,
   HeaderTopContainer,
+  InputSearch,
   LinkAdidas,
+  LinkBag,
   LinkLogin,
   LinkReebok,
   ListBase,
   ListTop,
   NavBase,
+  NavBottom,
 } from './elements';
 
 export default function Header() {
@@ -89,7 +95,7 @@ export default function Header() {
           <LinkAdidas href="/">
             <LogoAdidas />
           </LinkAdidas>
-          <NavBase>
+          <NavBottom>
             <ListBase>
               {linksNav.map(({ link, label, className = '' }) => (
                 <li className={className} key={label}>
@@ -97,7 +103,15 @@ export default function Header() {
                 </li>
               ))}
             </ListBase>
-          </NavBase>
+          </NavBottom>
+          <FormSearch action="/">
+            <LogoSearch />
+            <InputSearch />
+            <LinkBag>
+              <LogoBag />
+              <span>1</span>
+            </LinkBag>
+          </FormSearch>
         </HeaderBottomContainer>
       </HeaderBottom>
     </header>

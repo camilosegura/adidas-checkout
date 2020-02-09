@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" id="bag-active" viewBox="0 0 16 24">
+  <g stroke="currentColor" stroke-miterlimit="10" stroke-width="2">
+    <path fill="currentColor" d="M1 7h14v14H1z"></path>
+    <path fill="none" d="M11 10V3H5v7"></path>
+  </g>
+</svg>

@@ -25,10 +25,12 @@ const BaseHeaderContainer = styled(BaseCenter)`
 `;
 
 const HeaderTopContainer = styled(BaseHeaderContainer)`
+  height: 100%;
   justify-content: flex-end;
 `;
 
 const LinkReebok = styled(BaseCenter)`
+  font-size: 10px;
   padding: 0 30px 0 10px;
 
   svg {
@@ -85,6 +87,7 @@ const HeaderBottom = styled.div`
   font-family: AdineuePRO,Helvetica,Arial,sans-serif;
   font-size: 15px;
   font-weight: 400;
+  letter-spacing: .5px;
   line-height: 45px;
   height: 48px;
 
@@ -110,15 +113,58 @@ const LinkAdidas = styled.a`
   top: -15px;
 `;
 
+const NavBottom = styled(NavBase)`
+  flex-grow: 1;
+`;
+
+const FormSearch = styled.form`
+  align-items: center;
+  display: flex;
+  height: 48px;
+  position: relative;
+
+  svg {
+    left: 0;
+    position: absolute;
+  }
+`;
+
+const InputSearch = styled.input`
+  border: none;
+  height: 32px;
+  width: 140px;
+`;
+
+const LinkBag = styled.a`
+  align-items: center;
+  background-color: #0071ae;
+  display: flex;
+  font-family: AdihausDIN,Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  height: 100%;
+  padding-left: 8px !important;
+  position: relative;
+  width: 48px;
+
+  svg {
+    position: relative;
+  }
+`;
+
 export {
+  FormSearch,
   HeaderBottom,
   HeaderBottomContainer,
   HeaderTop,
   HeaderTopContainer,
+  InputSearch,
   LinkAdidas,
+  LinkBag,
   LinkLogin,
   LinkReebok,
   ListBase,
   ListTop,
   NavBase,
+  NavBottom,
 };
