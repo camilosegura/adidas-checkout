@@ -7,6 +7,7 @@ const BaseCenter = styled.div`
 
 const HeaderTop = styled.div`
   background: linear-gradient(90deg,#000 30%,transparent 50%),linear-gradient(180deg,#000 0,#363738);
+  font-family: AdihausDIN,Helvetica,Arial,sans-serif;
   font-size: 11px;
   font-weight: 400;
   height: 32px;
@@ -81,6 +82,7 @@ const ListTop = styled(ListBase)`
 
 const HeaderBottom = styled.div`
   background-color: black;
+  font-family: AdineuePRO,Helvetica,Arial,sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 45px;
