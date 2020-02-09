@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   @font-face {
-    font-family: 'adineuePRO';
+    font-family: 'AdineuePRO';
     src: url('/fonts/adineuePRO-Bold.woff2');
     src: url('/fonts/adineuePRO-Regular.woff2');
   }
