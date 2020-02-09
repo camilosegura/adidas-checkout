@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import PropTypes from 'prop-types';
-import 'bootstrap/scss/bootstrap-grid.scss';
+import '../styles/bootstrap-grid.scss';
 import Layout from 'components/Layout';
 import { createGlobalStyle } from 'styled-components';
 
@@ -21,8 +21,21 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  html {
+    font-size: 16px;
+  }
+
   body {
+    color: #000;
+    font-family: AdihausDIN,Helvetica,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
     margin: 0;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
   }
 `;
 

@@ -4,6 +4,7 @@ const PageTitle = styled.h1`
   font-family: AdineuePRO,Helvetica,Arial,sans-serif;
   font-size: 42px;
   font-weight: 600;
+  margin: 20px 0;
 `;
 
 const TotalItems = styled.span`
