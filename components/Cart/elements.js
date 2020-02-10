@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+const PageHeader = styled.header`
+  margin-bottom: 40px;
+`;
+
 const PageTitle = styled.h1`
   font-family: AdineuePRO,Helvetica,Arial,sans-serif;
   font-size: 42px;
@@ -17,12 +21,14 @@ const TotalItems = styled.span`
   }
 `;
 
-const Or = styled.p`
-  text-align: center;
+const ButtonsPayContainer = styled.div`
+  display: flex;
+  margin-top: 40px;
 `;
 
 export {
-  Or,
+  ButtonsPayContainer,
+  PageHeader,
   PageTitle,
   TotalItems,
 };
