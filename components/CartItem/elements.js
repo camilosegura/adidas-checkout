@@ -3,6 +3,7 @@ import styled from 'styled-components';
 const CartItemContainer = styled.article`
   display: flex;
   border: 1px solid #767677;
+  position: relative;
 `;
 
 const LinkImage = styled.a`
