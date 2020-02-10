@@ -2,6 +2,7 @@ import ButtonsPay from 'components/ButtonsPay';
 import CartItem from 'components/CartItem';
 import CartItemActionsBar from 'components/CartItemActionsBar';
 import CartQuantity from 'components/CartQuantity';
+import OrderSummary from 'components/OrderSummary';
 import {
   ButtonsPayContainer, PageHeader, PageTitle, TotalItems,
 } from './elements';
@@ -26,6 +27,7 @@ export default function Cart() {
       </main>
       <aside className="col-lg-8">
         <ButtonsPay />
+        <OrderSummary />
       </aside>
     </div>
   );

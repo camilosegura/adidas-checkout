@@ -36,7 +36,7 @@ const Button = styled.button`
     transform: initial;
 
     &::before {
-      border: none;
+      display: none;
     }
 
     svg {

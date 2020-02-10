@@ -37,6 +37,10 @@ const GlobalStyle = createGlobalStyle`
     color: #000;
     text-decoration: none;
   }
+
+  h1, h2, h3, h4, h5 {
+    font-family: AdineuePRO,Helvetica,Arial,sans-serif
+  }
 `;
 
 export default function App({ Component, pageProps }) {
