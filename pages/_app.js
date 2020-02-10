@@ -3,6 +3,10 @@ import PropTypes from 'prop-types';
 import '../styles/bootstrap-grid.scss';
 import Layout from 'components/Layout';
 import { createGlobalStyle } from 'styled-components';
+import { Provider } from 'react-redux';
+import withRedux from 'next-redux-wrapper';
+import withReduxSaga from 'next-redux-saga';
+import createStore from '../redux/store';
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -43,18 +47,37 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-export default function App({ Component, pageProps }) {
+function App({ Component, pageProps, store }) {
   return (
-    <Layout>
-      <>
-        <GlobalStyle />
-        <Component {...pageProps} />
-      </>
-    </Layout>
+    <Provider store={store}>
+      <Layout>
+        <>
+          <GlobalStyle />
+          <Component {...pageProps} />
+        </>
+      </Layout>
+    </Provider>
   );
 }
 
+App.getInitialProps = async ({ Component, ctx }) => {
+  let pageProps = {};
+
+  if (Component.getInitialProps) {
+    pageProps = await Component.getInitialProps({ ctx });
+  }
+
+  return { pageProps };
+};
+
+App.defaultProps = {
+  pageProps: {},
+};
+
 App.propTypes = {
   Component: PropTypes.elementType.isRequired,
-  pageProps: PropTypes.object.isRequired,
+  pageProps: PropTypes.object,
+  store: PropTypes.object.isRequired,
 };
+
+export default withRedux(createStore)(withReduxSaga(App));

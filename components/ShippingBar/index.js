@@ -22,15 +22,12 @@ export default function ShippingBar() {
 
   return (
     <ShippingBarContainer>
-
       {links.map(({ link, label, icon: Icon }) => (
         <LinkShipping href={link} key={label}>
           {Icon && <Icon />}
-
           {label}
         </LinkShipping>
       ))}
-
     </ShippingBarContainer>
   );
 }
