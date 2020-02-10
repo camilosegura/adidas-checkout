@@ -13,6 +13,10 @@ export default function ButtonPay({ payPal }) {
   );
 }
 
+ButtonPay.defaultProps = {
+  payPal: false,
+};
+
 ButtonPay.propTypes = {
-  payPal: PropTypes.bool.isRequired,
+  payPal: PropTypes.bool,
 };

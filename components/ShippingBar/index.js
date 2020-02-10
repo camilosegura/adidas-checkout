@@ -24,7 +24,7 @@ export default function ShippingBar() {
     <ShippingBarContainer>
 
       {links.map(({ link, label, icon: Icon }) => (
-        <LinkShipping href={link}>
+        <LinkShipping href={link} key={label}>
           {Icon && <Icon />}
 
           {label}
