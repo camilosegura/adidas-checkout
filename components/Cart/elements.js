@@ -17,7 +17,12 @@ const TotalItems = styled.span`
   }
 `;
 
+const Or = styled.p`
+  text-align: center;
+`;
+
 export {
+  Or,
   PageTitle,
   TotalItems,
 };
