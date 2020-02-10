@@ -8,7 +8,7 @@ import {
   LinkImage,
 } from './elements';
 
-export default function CartItem({ children }) {
+export default function CartItem({ children, actionsBar }) {
   return (
     <CartItemContainer>
       <LinkImage>
@@ -26,10 +26,12 @@ export default function CartItem({ children }) {
         <CartItemStock>LOW IN STOCK</CartItemStock>
         {children}
       </CartItemDescription>
+      {actionsBar}
     </CartItemContainer>
   );
 }
 
 CartItem.propTypes = {
   children: PropTypes.element.isRequired,
+  actionsBar: PropTypes.element.isRequired,
 };

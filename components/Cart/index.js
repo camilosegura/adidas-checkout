@@ -1,4 +1,5 @@
 import CartItem from 'components/CartItem';
+import CartItemActionsBar from 'components/CartItemActionsBar';
 import { PageTitle, TotalItems } from './elements';
 
 export default function Cart() {
@@ -9,7 +10,9 @@ export default function Cart() {
         TOTAL: (1 item)
         <strong>$180</strong>
       </TotalItems>
-      <CartItem />
+      <CartItem actionsBar={<CartItemActionsBar />}>
+        QTY
+      </CartItem>
     </main>
   );
 }

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" id="cross-small" viewBox="0 0 14 24">
+  <g fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2">
+    <path d="M13 6l-6 6 6 6M1 6l6 6-6 6"></path>
+  </g>
+</svg>
