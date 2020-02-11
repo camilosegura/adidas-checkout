@@ -35,6 +35,7 @@ const GlobalStyle = createGlobalStyle`
     font-style: normal;
     font-weight: 400;
     margin: 0;
+    text-transform: uppercase;
   }
 
   a {

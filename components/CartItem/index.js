@@ -8,7 +8,9 @@ import {
   LinkImage,
 } from './elements';
 
-export default function CartItem({ children, actionsBar }) {
+export default function CartItem({
+  children, actionsBar, name, color, price, gender, size, availability,
+}) {
   return (
     <CartItemContainer>
       <LinkImage>
@@ -17,13 +19,20 @@ export default function CartItem({ children, actionsBar }) {
       <CartItemDescription className="offset-lg-1">
         <CartItemTitle>
           <a href="/">
-            ULTRABOOST DNA
+            {name}
           </a>
-          <span>$180.00</span>
+          <span>{`$${price}.00`}</span>
         </CartItemTitle>
-        <span>CORE BLACK / CORE BLACK / SCARLET</span>
-        <CartItemSizePrice>SIZE: 6 (US Men)</CartItemSizePrice>
-        <CartItemStock>LOW IN STOCK</CartItemStock>
+        <span>{color}</span>
+        <CartItemSizePrice>
+          SIZE:
+          {` ${size} `}
+          (
+          US
+          {gender === 'M' ? ' Men' : ' Women'}
+          )
+        </CartItemSizePrice>
+        <CartItemStock>{availability}</CartItemStock>
         {children}
       </CartItemDescription>
       {actionsBar}

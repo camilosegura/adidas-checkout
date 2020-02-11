@@ -16,6 +16,7 @@ function formatProducts(productsInfo, productsAvailable) {
       color: attribute_list.color,
       gender: attribute_list.gender,
       size: productsAvailable[index].data.variation_list[0].size,
+      availability: productsAvailable[index].data.variation_list[0].availability_status.replace('_', ' '),
       qty: 1,
     };
 

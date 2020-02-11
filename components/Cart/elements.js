@@ -23,7 +23,6 @@ const TotalItems = styled.span`
 
 const ButtonsPayContainer = styled.div`
   display: flex;
-  margin-top: 40px;
 `;
 
 export {
