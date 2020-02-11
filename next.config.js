@@ -4,6 +4,8 @@ const withFonts = require('next-fonts');
 
 const aliases = require('./alias-config');
 
+const PORT = process.env.PORT || 3000;
+
 module.exports = withFonts(withCSS(withSass({
   // cssModules: true,
   webpack(config) {
@@ -16,5 +18,8 @@ module.exports = withFonts(withCSS(withSass({
     };
 
     return configAlias;
+  },
+  publicRuntimeConfig: {
+    PORT,
   },
 })));
