@@ -43,4 +43,10 @@ export default function CartItem({
 CartItem.propTypes = {
   children: PropTypes.element.isRequired,
   actionsBar: PropTypes.element.isRequired,
+  name: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
+  price: PropTypes.string.isRequired,
+  gender: PropTypes.string.isRequired,
+  size: PropTypes.string.isRequired,
+  availability: PropTypes.string.isRequired,
 };

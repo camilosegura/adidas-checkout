@@ -1,12 +1,13 @@
+import PropTypes from 'prop-types';
 import { OrderSummaryContainer, OrderSummaryItem, OrderSummaryTitle } from './elements';
 
-export default function OrderSummary() {
+export default function OrderSummary({ totalItems, totalPrice }) {
   return (
     <OrderSummaryContainer>
       <OrderSummaryTitle>ORDER SUMMARY</OrderSummaryTitle>
       <OrderSummaryItem>
-        <span>4 ITEMS</span>
-        <span>$570.00</span>
+        <span>{`${totalItems} ITEMS`}</span>
+        <span>{`$${totalPrice}.00`}</span>
       </OrderSummaryItem>
       <OrderSummaryItem>
         <span>DELIVERY</span>
@@ -18,8 +19,13 @@ export default function OrderSummary() {
       </OrderSummaryItem>
       <OrderSummaryItem>
         <strong>TOTAL</strong>
-        <strong>$570.00</strong>
+        <strong>{`$${totalPrice}.00`}</strong>
       </OrderSummaryItem>
     </OrderSummaryContainer>
   );
 }
+
+OrderSummary.propTypes = {
+  totalItems: PropTypes.number.isRequired,
+  totalPrice: PropTypes.number.isRequired,
+};

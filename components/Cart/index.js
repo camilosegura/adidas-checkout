@@ -49,7 +49,7 @@ export default function Cart() {
       </main>
       <aside className="col-lg-8">
         <ButtonsPay />
-        <OrderSummary />
+        <OrderSummary totalItems={totalItems} totalPrice={totalPrice} />
         <PromoCode />
       </aside>
     </div>
