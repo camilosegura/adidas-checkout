@@ -1,21 +1,18 @@
+import axios from 'axios';
+
 function getProducts() {
-  return fetch('/api/products').then((response) => response.json());
+  return axios.get('http://localhost:3000/api/products').then((response) => response.data);
 }
 
 function getProductAvailability(id) {
-  return fetch(`/api/products/${id}/availability`).then((response) => response.json());
+  return axios.get(`http://localhost:3000/api/products/${id}/availability`).then((response) => response.data);
 }
 
 function getProductInfo(id) {
-  return fetch(`/api/products/${id}`).then((response) => response.json());
-}
-
-function createBasket() {
-  return fetch('/api/basket', { method: 'POST' }).then((response) => response.json());
+  return axios.get(`http://localhost:3000/api/products/${id}`).then((response) => response.data);
 }
 
 export {
-  createBasket,
   getProducts,
   getProductAvailability,
   getProductInfo,

@@ -31,6 +31,7 @@ export default function Cart() {
           id, name, color, price, gender, size, availability,
         }) => (
           <CartItem
+            key={id}
             name={name}
             color={color}
             price={price}

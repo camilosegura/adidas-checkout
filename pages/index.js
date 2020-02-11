@@ -1,18 +1,20 @@
-import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import React from 'react';
+import { connect } from 'react-redux';
 import Cart from 'components/Cart';
 import { loadData } from '../redux/actions';
 
 function Index() {
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(loadData());
-  }, []);
-
   return (
     <Cart />
   );
 }
 
-export default Index;
+Index.getInitialProps = async (props) => {
+  const { store, isServer } = props.ctx;
+
+  store.dispatch(loadData());
+
+  return { isServer };
+};
+
+export default connect()(Index);

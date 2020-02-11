@@ -45,7 +45,7 @@ CartItem.propTypes = {
   actionsBar: PropTypes.element.isRequired,
   name: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
-  price: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
   gender: PropTypes.string.isRequired,
   size: PropTypes.string.isRequired,
   availability: PropTypes.string.isRequired,
