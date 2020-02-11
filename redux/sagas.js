@@ -1,17 +1,24 @@
 import {
-  all, call, delay, fork, put, take, takeLatest,
+  all, call, put, takeLatest,
 } from 'redux-saga/effects';
 import { actionTypes, failure, loadDataSuccess } from './actions';
-import { createBasket, getProducts, getProductsAvailability } from '../api';
+import {
+  getProducts, getProductAvailability, getProductInfo,
+} from '../api';
+import { formatProducts, getTotalItems, getTotalPrice } from './utils';
 
 function* loadDataSaga() {
   try {
-    const data = yield getProducts();
-    const items = data.items.slice(1, 4);
-    const itemsAvailable = yield all(items.map((item) => call(getProductsAvailability, item.productId)));
-    const basket = yield createBasket();
+    const { data } = yield getProducts();
+    const productsAvailable = yield all(data.map(({ productId }) => call(
+      getProductAvailability, productId,
+    )));
+    const productsInfo = yield all(data.map(({ productId }) => call(getProductInfo, productId)));
+    const products = formatProducts(productsInfo, productsAvailable);
+    const totalItems = getTotalItems(products);
+    const totalPrice = getTotalPrice(products);
 
-    yield put(loadDataSuccess([itemsAvailable, basket]));
+    yield put(loadDataSuccess({ products, totalItems, totalPrice }));
   } catch (err) {
     yield put(failure(err));
   }

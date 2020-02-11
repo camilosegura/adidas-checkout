@@ -1,14 +1,13 @@
 import { actionTypes } from './actions';
 
-export const exampleInitialState = {
-  count: 0,
+export const defaultInitialState = {
+  products: {},
+  totalItems: 0,
+  totalPrice: 0,
   error: false,
-  lastUpdate: 0,
-  light: false,
-  placeholderData: null,
 };
 
-export default function reducer(state = exampleInitialState, action) {
+export default function reducer(state = defaultInitialState, action) {
   switch (action.type) {
     case actionTypes.FAILURE:
       return {
@@ -18,7 +17,7 @@ export default function reducer(state = exampleInitialState, action) {
     case actionTypes.LOAD_DATA_SUCCESS:
       return {
         ...state,
-        ...{ items: action.data },
+        ...{ ...action.data },
       };
     default:
       return state;

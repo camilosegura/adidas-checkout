@@ -2,7 +2,11 @@ function getProducts() {
   return fetch('/api/products').then((response) => response.json());
 }
 
-function getProductsAvailability(id) {
+function getProductAvailability(id) {
+  return fetch(`/api/products/${id}/availability`).then((response) => response.json());
+}
+
+function getProductInfo(id) {
   return fetch(`/api/products/${id}`).then((response) => response.json());
 }
 
@@ -13,5 +17,6 @@ function createBasket() {
 export {
   createBasket,
   getProducts,
-  getProductsAvailability,
+  getProductAvailability,
+  getProductInfo,
 };
