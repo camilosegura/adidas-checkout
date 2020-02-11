@@ -1,12 +1,13 @@
+import PropTypes from 'prop-types';
 import ButtonAction from './elements';
 import LogoDelete from '../../public/delete.svg';
 import LogoWishList from '../../public/wishlist.svg';
 
 
-export default function CartItemActions() {
+export default function CartItemActions({ onRemove }) {
   return (
     <div>
-      <ButtonAction>
+      <ButtonAction onClick={onRemove}>
         <LogoDelete />
       </ButtonAction>
       <ButtonAction>
@@ -15,3 +16,7 @@ export default function CartItemActions() {
     </div>
   );
 }
+
+CartItemActions.propTypes = {
+  onRemove: PropTypes.func.isRequired,
+};

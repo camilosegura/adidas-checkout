@@ -1,4 +1,5 @@
 import { actionTypes } from './actions';
+import { getTotalItems, getTotalPrice } from './utils';
 
 export const defaultInitialState = {
   products: {},
@@ -8,6 +9,7 @@ export const defaultInitialState = {
 };
 
 export default function reducer(state = defaultInitialState, action) {
+  let products;
   switch (action.type) {
     case actionTypes.FAILURE:
       return {
@@ -18,6 +20,16 @@ export default function reducer(state = defaultInitialState, action) {
       return {
         ...state,
         ...{ ...action.data },
+      };
+    case actionTypes.REMOVE_PRODUCT:
+      products = { ...state.products };
+      delete products[action.data];
+
+      return {
+        ...state,
+        ...{ products },
+        ...{ totalItems: getTotalItems(products) },
+        ...{ totalPrice: getTotalPrice(products) },
       };
     default:
       return state;
