@@ -3,6 +3,7 @@ export const actionTypes = {
   LOAD_DATA: 'LOAD_DATA',
   LOAD_DATA_SUCCESS: 'LOAD_DATA_SUCCESS',
   REMOVE_PRODUCT: 'REMOVE_PRODUCT',
+  CHANGE_QUANTITY: 'CHANGE_QUANTITY',
 };
 
 export function failure(error) {
@@ -26,6 +27,13 @@ export function removeProduct(data) {
 export function loadDataSuccess(data) {
   return {
     type: actionTypes.LOAD_DATA_SUCCESS,
+    data,
+  };
+}
+
+export function changeQuantity(data) {
+  return {
+    type: actionTypes.CHANGE_QUANTITY,
     data,
   };
 }

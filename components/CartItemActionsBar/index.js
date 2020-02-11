@@ -1,10 +1,15 @@
+import { useCallback } from 'react';
+import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import ButtonAction from './elements';
 import LogoDelete from '../../public/delete.svg';
 import LogoWishList from '../../public/wishlist.svg';
+import { removeProduct } from '../../redux/actions';
 
+export default function CartItemActions({ id }) {
+  const dispatch = useDispatch();
+  const onRemove = useCallback(() => dispatch(removeProduct(id)), []);
 
-export default function CartItemActions({ onRemove }) {
   return (
     <div>
       <ButtonAction onClick={onRemove}>
@@ -18,5 +23,5 @@ export default function CartItemActions({ onRemove }) {
 }
 
 CartItemActions.propTypes = {
-  onRemove: PropTypes.func.isRequired,
+  id: PropTypes.string.isRequired,
 };

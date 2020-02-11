@@ -31,6 +31,16 @@ export default function reducer(state = defaultInitialState, action) {
         ...{ totalItems: getTotalItems(products) },
         ...{ totalPrice: getTotalPrice(products) },
       };
+    case actionTypes.CHANGE_QUANTITY:
+      products = { ...state.products };
+      products[action.data.id].qty = action.data.qty;
+
+      return {
+        ...state,
+        ...{ products },
+        ...{ totalItems: getTotalItems(products) },
+        ...{ totalPrice: getTotalPrice(products) },
+      };
     default:
       return state;
   }

@@ -1,11 +1,10 @@
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import ButtonsPay from 'components/ButtonsPay';
 import CartItem from 'components/CartItem';
 import CartItemActionsBar from 'components/CartItemActionsBar';
 import CartQuantity from 'components/CartQuantity';
 import OrderSummary from 'components/OrderSummary';
 import PromoCode from 'components/PromoCode';
-import { removeProduct } from '../../redux/actions';
 import {
   ButtonsPayContainer, PageHeader, PageTitle, TotalItems,
 } from './elements';
@@ -14,7 +13,6 @@ export default function Cart() {
   const products = useSelector((state) => state.products);
   const totalItems = useSelector((state) => state.totalItems);
   const totalPrice = useSelector((state) => state.totalPrice);
-  const dispatch = useDispatch();
 
   return (
     <div className="row">
@@ -30,7 +28,7 @@ export default function Cart() {
       </PageHeader>
       <main className="col-lg-16">
         {Object.values(products).map(({
-          id, name, color, price, gender, size, availability,
+          id, name, color, price, gender, size, availability, qty,
         }) => (
           <CartItem
             key={id}
@@ -40,9 +38,9 @@ export default function Cart() {
             gender={gender}
             size={size}
             availability={availability}
-            actionsBar={<CartItemActionsBar onRemove={() => dispatch(removeProduct(id))} />}
+            actionsBar={<CartItemActionsBar id={id} />}
           >
-            <CartQuantity />
+            <CartQuantity id={id} quantity={qty} />
           </CartItem>
         ))}
 

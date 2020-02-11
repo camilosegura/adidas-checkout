@@ -40,7 +40,7 @@ function getTotalPrice(products) {
   let totalPrice = 0;
 
   Object.keys(products).forEach((key) => {
-    totalPrice += products[key].price;
+    totalPrice += products[key].price * products[key].qty;
   });
 
   return totalPrice;
