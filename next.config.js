@@ -4,7 +4,7 @@ const withFonts = require('next-fonts');
 
 const aliases = require('./alias-config');
 
-const HOST = process.env.HOST || 'http://localhost';
+const HOST = process.env.HOST || 'http://localhost:3000';
 const PORT = process.env.PORT || 3000;
 
 module.exports = withFonts(withCSS(withSass({
