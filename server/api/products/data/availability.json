@@ -1,0 +1,344 @@
+{
+  "EG0701": {
+    "id": "EG0701",
+    "availability_status": "IN_STOCK",
+    "variation_list": [
+      {
+        "sku": "EG0701_520",
+        "availability": 0,
+        "availability_status": "NOT_AVAILABLE",
+        "size": "3.5"
+      },
+      {
+        "sku": "EG0701_530",
+        "availability": 4,
+        "availability_status": "IN_STOCK",
+        "size": "4"
+      },
+      {
+        "sku": "EG0701_540",
+        "availability": 0,
+        "availability_status": "NOT_AVAILABLE",
+        "size": "4.5"
+      },
+      {
+        "sku": "EG0701_550",
+        "availability": 15,
+        "availability_status": "IN_STOCK",
+        "size": "5"
+      },
+      {
+        "sku": "EG0701_560",
+        "availability": 0,
+        "availability_status": "NOT_AVAILABLE",
+        "size": "5.5"
+      },
+      {
+        "sku": "EG0701_570",
+        "availability": 15,
+        "availability_status": "IN_STOCK",
+        "size": "6"
+      },
+      {
+        "sku": "EG0701_580",
+        "availability": 15,
+        "availability_status": "IN_STOCK",
+        "size": "6.5"
+      },
+      {
+        "sku": "EG0701_590",
+        "availability": 15,
+        "availability_status": "IN_STOCK",
+        "size": "7"
+      },
+      {
+        "sku": "EG0701_600",
+        "availability": 15,
+        "availability_status": "IN_STOCK",
+        "size": "7.5"
+      },
+      {
+        "sku": "EG0701_610",
+        "availability": 15,
+        "availability_status": "IN_STOCK",
+        "size": "8"
+      },
+      {
+        "sku": "EG0701_620",
+        "availability": 15,
+        "availability_status": "IN_STOCK",
+        "size": "8.5"
+      },
+      {
+        "sku": "EG0701_630",
+        "availability": 15,
+        "availability_status": "IN_STOCK",
+        "size": "9"
+      },
+      {
+        "sku": "EG0701_640",
+        "availability": 15,
+        "availability_status": "IN_STOCK",
+        "size": "9.5"
+      },
+      {
+        "sku": "EG0701_650",
+        "availability": 15,
+        "availability_status": "IN_STOCK",
+        "size": "10"
+      },
+      {
+        "sku": "EG0701_660",
+        "availability": 15,
+        "availability_status": "IN_STOCK",
+        "size": "10.5"
+      },
+      {
+        "sku": "EG0701_670",
+        "availability": 15,
+        "availability_status": "IN_STOCK",
+        "size": "11"
+      },
+      {
+        "sku": "EG0701_680",
+        "availability": 15,
+        "availability_status": "IN_STOCK",
+        "size": "11.5"
+      },
+      {
+        "sku": "EG0701_690",
+        "availability": 15,
+        "availability_status": "IN_STOCK",
+        "size": "12"
+      },
+      {
+        "sku": "EG0701_700",
+        "availability": 15,
+        "availability_status": "IN_STOCK",
+        "size": "12.5"
+      },
+      {
+        "sku": "EG0701_710",
+        "availability": 15,
+        "availability_status": "IN_STOCK",
+        "size": "13"
+      },
+      {
+        "sku": "EG0701_720",
+        "availability": 0,
+        "availability_status": "NOT_AVAILABLE",
+        "size": "13.5"
+      },
+      {
+        "sku": "EG0701_730",
+        "availability": 0,
+        "availability_status": "NOT_AVAILABLE",
+        "size": "14"
+      },
+      {
+        "sku": "EG0701_740",
+        "availability": 0,
+        "availability_status": "NOT_AVAILABLE",
+        "size": "14.5"
+      },
+      {
+        "sku": "EG0701_750",
+        "availability": 0,
+        "availability_status": "NOT_AVAILABLE",
+        "size": "15"
+      },
+      {
+        "sku": "EG0701_760",
+        "availability": 0,
+        "availability_status": "NOT_AVAILABLE",
+        "size": "16"
+      },
+      {
+        "sku": "EG0701_780",
+        "availability": 0,
+        "availability_status": "NOT_AVAILABLE",
+        "size": "17"
+      },
+      {
+        "sku": "EG0701_790",
+        "availability": 0,
+        "availability_status": "NOT_AVAILABLE",
+        "size": "18"
+      }
+    ]
+  },
+  "EG0761": {
+    "id": "EG0761",
+    "availability_status": "IN_STOCK",
+    "variation_list": [
+      {
+        "sku": "EG0761_530",
+        "availability": 10,
+        "availability_status": "IN_STOCK",
+        "size": "5"
+      },
+      {
+        "sku": "EG0761_540",
+        "availability": 15,
+        "availability_status": "IN_STOCK",
+        "size": "5.5"
+      },
+      {
+        "sku": "EG0761_550",
+        "availability": 15,
+        "availability_status": "IN_STOCK",
+        "size": "6"
+      },
+      {
+        "sku": "EG0761_560",
+        "availability": 15,
+        "availability_status": "IN_STOCK",
+        "size": "6.5"
+      },
+      {
+        "sku": "EG0761_570",
+        "availability": 15,
+        "availability_status": "IN_STOCK",
+        "size": "7"
+      },
+      {
+        "sku": "EG0761_580",
+        "availability": 15,
+        "availability_status": "IN_STOCK",
+        "size": "7.5"
+      },
+      {
+        "sku": "EG0761_590",
+        "availability": 15,
+        "availability_status": "IN_STOCK",
+        "size": "8"
+      },
+      {
+        "sku": "EG0761_600",
+        "availability": 15,
+        "availability_status": "IN_STOCK",
+        "size": "8.5"
+      },
+      {
+        "sku": "EG0761_610",
+        "availability": 15,
+        "availability_status": "IN_STOCK",
+        "size": "9"
+      },
+      {
+        "sku": "EG0761_620",
+        "availability": 15,
+        "availability_status": "IN_STOCK",
+        "size": "9.5"
+      },
+      {
+        "sku": "EG0761_630",
+        "availability": 15,
+        "availability_status": "IN_STOCK",
+        "size": "10"
+      },
+      {
+        "sku": "EG0761_640",
+        "availability": 15,
+        "availability_status": "IN_STOCK",
+        "size": "10.5"
+      },
+      {
+        "sku": "EG0761_650",
+        "availability": 15,
+        "availability_status": "IN_STOCK",
+        "size": "11"
+      },
+      {
+        "sku": "EG0761_660",
+        "availability": 0,
+        "availability_status": "NOT_AVAILABLE",
+        "size": "11.5"
+      }
+    ]
+  },
+  "FU9350": {
+    "id": "FU9350",
+    "availability_status": "IN_STOCK",
+    "variation_list": [
+      {
+        "sku": "FU9350_530",
+        "availability": 15,
+        "availability_status": "IN_STOCK",
+        "size": "5"
+      },
+      {
+        "sku": "FU9350_540",
+        "availability": 15,
+        "availability_status": "IN_STOCK",
+        "size": "5.5"
+      },
+      {
+        "sku": "FU9350_550",
+        "availability": 15,
+        "availability_status": "IN_STOCK",
+        "size": "6"
+      },
+      {
+        "sku": "FU9350_560",
+        "availability": 15,
+        "availability_status": "IN_STOCK",
+        "size": "6.5"
+      },
+      {
+        "sku": "FU9350_570",
+        "availability": 15,
+        "availability_status": "IN_STOCK",
+        "size": "7"
+      },
+      {
+        "sku": "FU9350_580",
+        "availability": 15,
+        "availability_status": "IN_STOCK",
+        "size": "7.5"
+      },
+      {
+        "sku": "FU9350_590",
+        "availability": 15,
+        "availability_status": "IN_STOCK",
+        "size": "8"
+      },
+      {
+        "sku": "FU9350_600",
+        "availability": 15,
+        "availability_status": "IN_STOCK",
+        "size": "8.5"
+      },
+      {
+        "sku": "FU9350_610",
+        "availability": 15,
+        "availability_status": "IN_STOCK",
+        "size": "9"
+      },
+      {
+        "sku": "FU9350_620",
+        "availability": 15,
+        "availability_status": "IN_STOCK",
+        "size": "9.5"
+      },
+      {
+        "sku": "FU9350_630",
+        "availability": 15,
+        "availability_status": "IN_STOCK",
+        "size": "10"
+      },
+      {
+        "sku": "FU9350_640",
+        "availability": 15,
+        "availability_status": "IN_STOCK",
+        "size": "10.5"
+      },
+      {
+        "sku": "FU9350_650",
+        "availability": 15,
+        "availability_status": "IN_STOCK",
+        "size": "11"
+      }
+    ]
+  }
+}

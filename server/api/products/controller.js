@@ -1,14 +1,13 @@
-const axios = require('axios');
+
+const products = require('./data/products');
+const availability = require('./data/availability');
+const description = require('./data/description');
 
 exports.all = async (req, res, next) => {
-  const url = 'https://www.adidas.com/api/search/tf/query?query=all';
-
   try {
-    const response = await axios.get(url);
-
     res.json({
       success: true,
-      data: response.data.itemList.items.slice(1, 4),
+      data: products,
     });
   } catch (error) {
     next(new Error(error));
@@ -17,14 +16,11 @@ exports.all = async (req, res, next) => {
 
 exports.getAvailability = async (req, res, next) => {
   const { params: { id } } = req;
-  const url = `https://www.adidas.com/api/products/${id}/availability`;
 
   try {
-    const response = await axios.get(url);
-
     res.json({
       success: true,
-      data: response.data,
+      data: availability[id],
     });
   } catch (error) {
     next(new Error(error));
@@ -33,14 +29,11 @@ exports.getAvailability = async (req, res, next) => {
 
 exports.getInfo = async (req, res, next) => {
   const { params: { id } } = req;
-  const url = `https://www.adidas.com/api/products/${id}`;
 
   try {
-    const response = await axios.get(url);
-
     res.json({
       success: true,
-      data: response.data,
+      data: description[id],
     });
   } catch (error) {
     next(new Error(error));
