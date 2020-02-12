@@ -9,12 +9,12 @@ import {
 } from './elements';
 
 export default function CartItem({
-  children, actionsBar, name, color, price, gender, size, availability,
+  children, actionsBar, name, color, price, gender, size, availability, image,
 }) {
   return (
     <CartItemContainer>
       <LinkImage>
-        <img src="/cart-item.webp" alt="" />
+        <img src={image} alt="" />
       </LinkImage>
       <CartItemDescription className="offset-lg-1">
         <CartItemTitle>

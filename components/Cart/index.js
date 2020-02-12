@@ -28,7 +28,7 @@ export default function Cart() {
       </PageHeader>
       <main className="col-lg-16">
         {Object.values(products).map(({
-          id, name, color, price, gender, size, availability, qty,
+          id, name, color, price, gender, size, availability, qty, image,
         }) => (
           <CartItem
             key={id}
@@ -38,6 +38,7 @@ export default function Cart() {
             gender={gender}
             size={size}
             availability={availability}
+            image={image}
             actionsBar={<CartItemActionsBar id={id} />}
           >
             <CartQuantity id={id} quantity={qty} />

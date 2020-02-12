@@ -4,7 +4,7 @@ function formatProducts(productsInfo, productsAvailable) {
     {
       data: {
         // eslint-disable-next-line camelcase
-        id, name, pricing_information, attribute_list,
+        id, name, pricing_information, attribute_list, image_url,
       },
     },
     index,
@@ -17,6 +17,7 @@ function formatProducts(productsInfo, productsAvailable) {
       gender: attribute_list.gender,
       size: productsAvailable[index].data.variation_list[0].size,
       availability: productsAvailable[index].data.variation_list[0].availability_status.replace('_', ' '),
+      image: image_url,
       qty: 1,
     };
 
