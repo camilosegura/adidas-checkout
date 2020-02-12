@@ -49,4 +49,5 @@ CartItem.propTypes = {
   gender: PropTypes.string.isRequired,
   size: PropTypes.string.isRequired,
   availability: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
 };

@@ -1,10 +1,7 @@
 import axios from 'axios';
 import getConfig from 'next/config';
 
-
-const { publicRuntimeConfig: { PORT, HOST } } = getConfig();
-
-console.log("host", PORT, HOST);
+const { publicRuntimeConfig: { HOST } } = getConfig();
 
 function getProducts() {
   return axios.get(`${HOST}/api/products`).then((response) => response.data);
