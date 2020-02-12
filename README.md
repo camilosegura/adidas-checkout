@@ -22,4 +22,4 @@ Go to https://adidas-checkout.herokuapp.com
 
 This callenge was developed using **React**, **React Redux**, **Redux Sagas**, **Styled Components** and **NextJS** for SSR.
 
-A Node JS middleware was build to emulate the Adidas API
+A Node JS middleware was built to emulate the Adidas API
